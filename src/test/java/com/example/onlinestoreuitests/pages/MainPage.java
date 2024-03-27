@@ -1,6 +1,7 @@
 package com.example.onlinestoreuitests.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -13,12 +14,12 @@ public class MainPage extends BasePage {
     SelenideElement btnMonitors = findElementByName("Monitors");
 
     @Step("Нажать на кнопку signIn")
-    public MainPage clickByButtonSignIn(){
+    public LoginPage clickByButtonSignIn() {
         clickByElement(signIn);
-        return this;
+        return new LoginPage();
     }
     @Step("Нажать на кнопку logIn")
-    public LoginPage clickByButtonLogIn(){
+    public LoginPage clickByButtonLogIn() {
         clickByElement(logIn);
         return new LoginPage();
     }
@@ -33,4 +34,12 @@ public class MainPage extends BasePage {
         clickByElement(findElementByName(text));
         return new CardPage();
     }
+
+    @Step("в диалоговом окне нажать на кнопку ОК")
+    public MainPage clickBtnOk() {
+        WebDriverRunner.getWebDriver().switchTo().activeElement().sendKeys("enter");
+        return this;
+    }
+
+
 }

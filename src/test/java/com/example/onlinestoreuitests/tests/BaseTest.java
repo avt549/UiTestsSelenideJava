@@ -22,7 +22,7 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        open("https://www.demoblaze.com/");
+       open("https://www.demoblaze.com/");
     }
 
 }
