@@ -1,17 +1,9 @@
 package com.example.onlinestoreuitests.tests;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.WebDriverRunner;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.Alert;
-
-
-import java.sql.SQLOutput;
-import java.time.Duration;
-
-import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPageTest extends BaseTest{
 

@@ -8,6 +8,7 @@ public class CartPage extends BasePage{
 
    public SelenideElement placeOrder =  findElementByName("Place Order");
    public ElementsCollection btnsDelete = findElementsByName("Delete");
+
     @Step("нажать на кнопку Place Order")
     public PlaceOrder clickBtnPlaceOrder() {
         clickByElement(placeOrder);

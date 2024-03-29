@@ -13,7 +13,6 @@ public class LoginPage extends MainPage {
     SelenideElement buttonSignUp = $x("//button[contains(text(),'Sign up')]");
     SelenideElement inputSignUserName = $("#sign-username");
     SelenideElement inputSignPass = $("#sign-password");
-    SelenideElement buttonClose = $("//div[@class='modal fade show']//button[contains(text(),'Close')]");
 
 
     @Step("Ввести логин")

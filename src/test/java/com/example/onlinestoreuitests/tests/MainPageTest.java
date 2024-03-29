@@ -1,19 +1,12 @@
 package com.example.onlinestoreuitests.tests;
-
-
 import org.junit.jupiter.api.*;
-
 
 public class MainPageTest extends BaseTest {
 
     @Test
     @DisplayName("Покупка товара")
     public void search() {
-        mainPage.clickByButtonLogIn()
-                .inputLogin("Andrey")
-                .inputPass("qwerty")
-                .clickByBtnLogin()
-                .clickBuBtnPhones()
+        mainPage.clickBuBtnPhones()
                 .clickByCard("Samsung galaxy s6")
                 .clickBtnAddToCart();
                 mainPage.clickBtnOk()
@@ -27,7 +20,4 @@ public class MainPageTest extends BaseTest {
                 .inputYear("2022")
                 .clickBtnPurchase();
     }
-
-// проверка наличия всех основных элементов на сайте
-// Отображение товаров согласно категориям
 }

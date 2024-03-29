@@ -10,8 +10,6 @@ public class MainPage extends BasePage {
     SelenideElement signIn = $("#signin2");
     SelenideElement logIn = $("#login2");
     SelenideElement btnPhones = findElementByName("Phones");
-    SelenideElement btnLaptops = findElementByName("Laptops");
-    SelenideElement btnMonitors = findElementByName("Monitors");
 
     @Step("Нажать на кнопку signIn")
     public LoginPage clickByButtonSignIn() {
